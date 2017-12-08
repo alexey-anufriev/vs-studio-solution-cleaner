@@ -39,7 +39,8 @@ namespace SolutionCleaner
             StringBuilder cleaninigResults = new StringBuilder("Clean Up Results:");
             cleaninigResults.Append(Environment.NewLine);
 
-            foreach (var project in projects) {
+            foreach (var project in projects)
+            {
                 cleaninigResults.Append(CleanupProject(project));
             }
 
@@ -57,7 +58,8 @@ namespace SolutionCleaner
             StringBuilder cleaninigResults = new StringBuilder(Environment.NewLine);
             cleaninigResults.Append($"Project: {project.Name}: ");
 
-            try {
+            try
+            {
                 var path = project.Properties.Item("FullPath").Value as string;
 
                 var binPath = Path.Combine(path, "bin");
@@ -81,7 +83,8 @@ namespace SolutionCleaner
                     cleaninigResults.Append("['obj' > skipped] ");
                 }
             }
-            catch (Exception exception) {
+            catch (Exception exception)
+            {
                 cleaninigResults.Append($"Error while cleaning: {exception.Message}");
             }
 
