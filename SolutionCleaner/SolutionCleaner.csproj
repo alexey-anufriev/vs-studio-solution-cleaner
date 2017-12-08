@@ -73,6 +73,7 @@
     <Content Include="Resources\SolutionCleanerPackage.ico" />
     <VSCTCompile Include="SolutionCleanerPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>

@@ -56,7 +56,7 @@ namespace SolutionCleaner
         private string CleanupProject(Project project)
         {
             StringBuilder cleaninigResults = new StringBuilder(Environment.NewLine);
-            cleaninigResults.Append($"Project: {project.Name}: ");
+            cleaninigResults.Append($"{project.Name}: ");
 
             try
             {
